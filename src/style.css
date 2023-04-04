@@ -78,3 +78,7 @@ li.date {
 .week:hover {
     background-color: rgb(168, 204, 111);
 }
+.hedi {
+    text-align: center;
+    font-size: small;
+}
