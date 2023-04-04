@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="src/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Weather</title>
+    </head>
+    <body>
+        <div class="shape">
+            <form class="search" id="search-id">
+                <input
+                    type="text"
+                    id="searched"
+                    class="text"
+                    placeholder="Enter a city..."
+                />
+                <input
+                    id="submited"
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm"
+                />
+                <input
+                    id="current"
+                    type="submit"
+                    value="current"
+                    class="form-control btn btn-primary shadow-sm"
+                />
+            </form>
+            <h1>
+                <span id="city-name">Tehran, Iran </span>
+                <img src="img/shape.jpg" width="70px" />
+            </h1>
+
+            <ul class="date">
+                <li class="date" id="today-date">Today 12:00 am</li>
+                <li id="rainy" class="date">Rainy</li>
+            </ul>
+
+            <div>
+                <div class="foto">
+                    <img src="img/storm.jpg" alt="storm" width="50px" />
+                    <strong class="tempt" id="tempt">12 </strong>
+                    <span>
+                        <a href="#" id="celsios">°C </a>
+                        /
+                        <a href="#" id="fahrenheit">°F</a>
+                    </span>
+                </div>
+                <div class="discription">
+                    <span id="precipation">Precipitation:20%</span> <br />
+                    <span id="wind">Wind:15Km/h</span> <br />
+                    <span id="humidity">Humidity:50%</span>
+                    <div class="btn-group">
+                        <button type="button" class="btn-primary">
+                            Precipitation
+                        </button>
+                        <button type="button" class="btn-primary">
+                            Humidity
+                        </button>
+                        <button type="button" class="btn-primary">Wind</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <input type="range" name="clock" class="range" />
+            <hr />
+            <div>
+                <ul class="days">
+                    <li class="week" id="sunday">
+                        Sun 8
+                        <br /><br />
+                        <img src="img/storm.jpg" alt="storm" width="40px" />
+                        <br /><br />
+                        9 °C
+                    </li>
+                    <li class="week" id="monday">
+                        Mon 9
+                        <br /><br />
+                        <img src="img/suncloud.jpg" alt="cloudy" width="40px" />
+                        <br /><br />
+                        10 °C
+                    </li>
+                    <li class="week" id="tuesday">
+                        Tue 10
+                        <br /><br />
+                        <img
+                            src="img/suncloud.jpg"
+                            alt="sun and cloudy"
+                            width="40px"
+                        />
+                        <br /><br />
+                        11 °C
+                    </li>
+                    <li class="week" id="wendsday">
+                        Wed 11
+                        <br /><br />
+                        <img src="img/sun.jpg" alt="sun" width="40px" />
+                        <br /><br />
+                        10 °C
+                    </li>
+                    <li class="week" id="thursday">
+                        Thu 12
+                        <br /><br />
+                        <img src="img/sun.jpg" alt="suny" width="40px" />
+                        <br /><br />
+                        13 °C
+                    </li>
+                    <li class="week" id="friday">
+                        Fri 13
+                        <br /><br />
+                        <img src="img/sunny.jpg" alt="sunny" width="40px" />
+                        <br /><br />
+                        15 °C
+                    </li>
+                    <li class="week" id="saturday">
+                        Sat 14
+                        <br /><br />
+                        <img src="img/sun.jpg" alt="sun" width="40px" />
+                        <br /><br />
+                        14 °C
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="src/index.js"></script>
+    </body>
+</html>
